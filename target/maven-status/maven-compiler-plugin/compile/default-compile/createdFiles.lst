@@ -1,0 +1,12 @@
+Controllers\test.class
+Dao\ProduitDao.class
+com\javamaster\projetoracle\resources\JakartaEE10Resource.class
+Controllers\ProduitServlet.class
+Models\client.class
+Models\facture.class
+Dao\ClientDao.class
+Controllers\ClientServlet.class
+Dao\Test.class
+Models\bon_facture.class
+Models\produit.class
+com\javamaster\projetoracle\JakartaRestConfiguration.class
