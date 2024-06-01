@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Frameset//EN" "http://www.w3.org/TR/REC-html40/frameset.dtd">
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <button onclick="tester()">ok</button>
+        <script src="assets/js/jquery.js"></script>
+        <script>
+ function tester(){
+var dataToSend = {
+    key1: 'valeur1',
+    key2: 'valeur2'
+};
+
+// Envoi de la requête AJAX
+$.ajax({
+    url: 'http://localhost:9999/projetoracle/test',
+    type: 'POST',
+    contentType: 'application/json',
+    data: JSON.stringify(dataToSend),
+    success: function(response) {
+        // Gérer la réponse du serveur en cas de succès
+        console.log('Réponse du serveur :', response);
+    },
+    error: function(xhr, status, error) {
+        // Gérer les erreurs de la requête
+       
+    }
+});}
+</script>
+    </body>
+</html>
